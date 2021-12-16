@@ -1,5 +1,13 @@
 # Tuples: ordered, immutable, allows duplicate elements.
 # One element: If tuple has one element add "," after the element. eg: ("Hello",). If comma not added the data type will be string.
+# Slicing a List: Slice operation is performed on Lists with the use of a colon(:). 
+# [:Index] -> To print elements from beginning to a range use. 
+# [:-Index] -> To print elements from end-use. 
+# [Index:] -> To print elements from specific Index till the end use. 
+# [Start Index:End Index] -> To print elements within a range. 
+# [::-1] ->  To print the whole List in reverse order. 
+# [:] -> to print the whole List with the use of slicing operation.
+# Tuples are immutable and hence they do not allow deletion of a part of it. The entire tuple gets deleted by the use of del() method.
 
 # Creating an empty tuple.
 print("*** Empty tuple ***")
@@ -66,6 +74,26 @@ tuple_conc_one = ("Python", "React")
 tuple_conc_two = ("AWS", "Docker", "Kubernetes")
 tuple_concatenation = tuple_conc_one + tuple_conc_two
 print(tuple_concatenation) #('Python', 'React', 'AWS', 'Docker', 'Kubernetes')
+
+# Slicing of a Tuple
+slice_element = tuple("GEEKSFORGEEKS")
+print("*** Slice: Removing first element ***")
+print(slice_element[1:])
+
+print("*** Slice: Reversing the tuple ***")
+print(slice_element[::-1])
+
+print("*** Slice: Printing elements of a range ***")
+print(slice_element[4:9])
+
+# Deleting a tuple
+print("*** Deleting a tuple ***")
+del_tuple = (1, 2, 3, 4, 5)
+del del_tuple
+try:
+    print(del_tuple)
+except NameError:  
+    print("Tuples deleted!")  
 
 
 
