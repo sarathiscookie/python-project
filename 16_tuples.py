@@ -7,6 +7,7 @@
 # [Start Index:End Index] -> To print elements within a range. 
 # [::-1] ->  To print the whole List in reverse order. 
 # [:] -> to print the whole List with the use of slicing operation.
+# Tuples are immutable, and usually, they contain a sequence of heterogeneous elements that are accessed via unpacking or indexing (or even by attribute in the case of named tuples). Lists are mutable, and their elements are usually homogeneous and are accessed by iterating over the list.
 # Tuples are immutable and hence they do not allow deletion of a part of it. The entire tuple gets deleted by the use of del() method.
 
 # Creating an empty tuple.
