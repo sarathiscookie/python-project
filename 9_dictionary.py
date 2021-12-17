@@ -10,7 +10,7 @@ def hours(no_of_days):
 
 def minutes(no_of_days):
     calculate_minutes = no_of_days * 24 * 60
-    print(f"No of days: {no_of_days}. Units: Hours. Total: {calculate_minutes}")
+    print(f"No of days: {no_of_days}. Units: Minutes. Total: {calculate_minutes}")
     
 
 def calculations(input_no_of_days, input_units):
