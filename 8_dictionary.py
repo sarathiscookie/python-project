@@ -1,4 +1,4 @@
-# Note
+# dict(): Key-Value pairs, unordered, mutable, no duplicate key.
 # Dictionary: Dictionaries are used to store data values in key:value pairs.
 # The popitem() returns and removes an arbitrary element (key, value) pair from the dictionary. 
 # Arbitrary elements: An elements not chosen by user.
