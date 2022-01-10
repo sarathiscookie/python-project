@@ -1,11 +1,17 @@
 # Notes
 # f - stands for format.
 # type - check type of a variable. 
+# Slicing: colon(:). 
+# [:Index] -> To print elements from beginning to a range use. 
+# [:-Index] -> To print elements from end-use. 
+# [Index:] -> To print elements from specific Index till the end use. 
+# [Start Index:End Index] -> To print elements within a range. 
+# [::-1] ->  To print the whole List in reverse order. 
+# [:] -> to print the whole List with the use of slicing operation.
 
 # Topics
 # String, Number, Data type, Casting, Function, If else
 
-#####################################################
 # 1) String & Number data type & Casting str(), int()
 print("Hello World!")
 
@@ -16,6 +22,10 @@ print(20 * 24 * 60)
 print("Two days are "+ str(48) +" hours")
 
 print(f"Three days are {72} hours")
+
+# Reverse a string
+reverse_a_string = "Welcome"
+print(reverse_a_string[::-1])
 
 # 2) Variables
 calculate_to_seconds = 24 * 60 * 60
