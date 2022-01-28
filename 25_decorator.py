@@ -101,3 +101,12 @@ def parent_param_func(**kwargs):
 @parent_param_func(one = "Python", two = "Javascript", three = "Django", four = "React JS")
 def cal_fun():
     print("Inside actual function") 
+
+"""
+Inside decorator
+Inside actual function
+Python
+Javascript
+Django
+React JS
+"""    
