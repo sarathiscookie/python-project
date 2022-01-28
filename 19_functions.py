@@ -1,43 +1,3 @@
-# Treating the function as an object.
-# Passing the function as an argument.
-# Returning function from another function.
-
-# Treating the function as object.
-print("*** Treating the function as object. ***")
-def upper_case_fn(firstfun):
-    return firstfun.upper()
-
-print(upper_case_fn("hello"))
-
-var_func = upper_case_fn 
-
-print(var_func("Hello World!"))
-
-# Passing the function as an argument.
-print("Passing the function as an argument.")
-
-def upper_case_func(text):
-    return text.upper();
-
-def lower_case_func(text):
-    return text.lower();    
-
-def convert_text(func):
-    return func("Hello, Welcome onboard!")
-
-print(convert_text(upper_case_func))
-print(convert_text(lower_case_func))
-
-# Returning functions from another function.
-def main_func(x):
-    def sum_func(y):
-        return x + y
-
-    return sum_func
-
-sum_function = main_func(10)    
-print(sum_function(15))  
-
 # Functions
 print("######## Functions ########")
 calculate_to_seconds = 24 * 60 * 60
@@ -71,4 +31,8 @@ def validate_and_execute():
     else:
         print("Your input is not a valid number, please enter a valid positive number")
 
-validate_and_execute()  
+validate_and_execute() 
+
+
+
+ 
