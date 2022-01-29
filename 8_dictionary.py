@@ -50,3 +50,17 @@ pop_item_dict = dictionary.popitem()
 print(pop_item_dict)
 print(dictionary)
 
+# Merge two dictionary
+print("*** Merge two dictionary ***")
+dict_one = {
+  "customer": "Peter",
+  "contact": "mobile"
+}
+
+dict_two = {
+  "profession": "Software Engineer"
+}
+
+merge_dict = {**dict_one, **dict_two}
+print(merge_dict)
+
