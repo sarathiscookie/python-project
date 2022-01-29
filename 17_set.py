@@ -134,5 +134,12 @@ is_superset_check_two = is_superset_b.issuperset(is_superset_a)
 print(is_superset_check_one)
 print(is_superset_check_two)
 
+# Merge tuple and set in to a list.
+print("*** Merge tuple and set in to a list. ***")
+tuple_data = (1, 2, 3, 4)
+set_data = {5, 6, 7}
+merge_tuple_set = [*tuple_data, *set_data]
+print(merge_tuple_set)
+
 
 

@@ -96,6 +96,10 @@ try:
 except NameError:  
     print("Tuples deleted!")  
 
-
-
+# Merge two tuples in to list.
+print("*** Merge two tuples in to list. ***")
+tuple_one = (1, 3, 5)
+tuple_two = (7, 9)
+merge_tuple = [*tuple_one, *tuple_two]
+print(merge_tuple)
 
