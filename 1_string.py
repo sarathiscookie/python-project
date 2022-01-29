@@ -31,6 +31,16 @@ print("Two days are "+ str(48) +" hours")
 
 print(f"Three days are {72} hours")
 
+print(f"Power of a string: {2 ** 4}") #16
+
+print(f"Repeat list[] ten times: {[1] * 10}") #[1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+
+print(f"Repeat list[] ten times: {[1, 2] * 10}") #[1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2]
+
+print(f"Reapeat tuples() ten times: {(3, 4) * 10}") #(3, 4, 3, 4, 3, 4, 3, 4, 3, 4, 3, 4, 3, 4, 3, 4, 3, 4, 3, 4)
+
+print(f"Repeat string ten times: {'ABC' * 10}") #ABCABCABCABCABCABCABCABCABCABC
+
 # Reverse a string
 print("*** Reverse a string ***")
 reverse_a_string = "Welcome"
