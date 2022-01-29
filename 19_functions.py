@@ -1,38 +1,90 @@
-# Functions
-print("######## Functions ########")
-calculate_to_seconds = 24 * 60 * 60
+# *args: Non-keyword arguments.
+# **kwargs: Keyword arguments.
+# Positional arguments "func(a = 1, b = 2)"
+# Keyword Arguments "func(1, 2)"
+# Parameter "def func(parameter):"
+# Arguments "print(func(arguments))"
+# Default arguments
+# Container unpacking: Length of container must match the function parameter.
+# Python’s argument passing model is neither “Pass by Value” nor “Pass by Reference” but it is “Pass by Object Reference”.
 
-name_of_unit = "seconds"
+# Arguments and Parameter.
+print("*** Parameter and arguments. ***")
 
-def days_to_units(num_of_days):
-    return f"{num_of_days} days are {num_of_days * calculate_to_seconds} {name_of_unit}"
+def arg_example(greetings):  # greetings is the parameter.
+    print(greetings)
 
-function_example = days_to_units(200)
+arg_example("Hello") # Hello is the arguments.
 
-print(function_example)
+# Positional and Keyword arguments.
+print("*** Positional and Keyword arguments. ***")
 
-# input, if else 
-# Accept user input.
-user_input = input("Hey user, enter a number of days and i will convert in to hours! \n")
+def pos_key_arg_func(a, b, c):
+    print(a, b, c)
 
-def check_user_input(input_value):
-    convert_into_hours = 24
+pos_key_arg_func(1, 2, 3) # Positional arguments.  
+pos_key_arg_func(a = 1, b = 2, c = 3) # Keyword arguments. Order is not important like c = 3, a = 1, b = 2.
+"""
+1 2 3
+1 2 3
+"""
 
-    if input_value > 0:
-        return f"Total hours in {input_value} days is: {input_value * convert_into_hours} hours."
-    elif input_value == 0:
-        return "You entered a 0, please enter a valid positive number"
+# Default Arguments
+print("*** Default Arguments. ***")
 
+def default_arg(a, b, c, d = 4000):
+    print(a, b, c, d)
 
-def validate_and_execute():
-    if user_input.isdigit():
-        user_input_example = check_user_input(int(user_input))
-        print(user_input_example)
-    else:
-        print("Your input is not a valid number, please enter a valid positive number")
+default_arg(1000, 2000, 3000) # 1000 2000 3000 4000
 
-validate_and_execute() 
+# Variable length arguments (*args and **kwargs).
+print("*** Variable length arguments. ***")
 
+def func_arg(a, b, *args, **kwargs):
+    print(a, b) #1 2
 
+    for tuple_args in args:
+        print(tuple_args)
+        """
+        1000
+        2000
+        3000
+        """
+   
+    for key in kwargs:
+        print(key, kwargs[key])
+        """
+        one 1000000
+        two 200000
+        """
 
- 
+func_arg(1, 2, 1000, 2000, 3000, one = 1000000, two = 200000)       
+
+# Container unpacking in to function arguments.
+print("*** Container unpacking ***")
+
+def container_unpack_func(a, b, c):
+    print(a, b, c)
+
+print("List example:")
+data_list_example = [1000, 2000, 3000]
+container_unpack_func(*data_list_example) #1000 2000 3000
+
+print("Tuple example:")
+data_tuple_example = (999, 9999, 99999)
+container_unpack_func(*data_tuple_example) #999 9999 99999
+
+print("Dictionary example:")
+data_dict_func = {"a": "Python", "b": "Javscript", "c": "React JS"}
+container_unpack_func(*data_dict_func) #a b c
+container_unpack_func(**data_dict_func) #Python Javscript React JS
+
+# Pass by Object Reference.
+print("*** Pass by object reference ***")
+
+def pass_object_ref_func(data):
+    data = 1000000
+    return data
+
+data = 10
+print(pass_object_ref_func(data))    
