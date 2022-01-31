@@ -17,9 +17,6 @@
 # split() and join() string.
 # format(): Strings in Python can be formatted with the use of format() method.
 
-# Topics
-# String, Number, Data type, Casting, Function, If else
-
 # 1) String & Number data type & Casting str(), int()
 print("Hello World!")
 

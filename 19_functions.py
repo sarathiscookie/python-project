@@ -4,7 +4,7 @@
 # Keyword Arguments "func(1, 2)"
 # Parameter "def func(parameter):"
 # Arguments "print(func(arguments))"
-# Default arguments
+# Default arguments "func(a = 1, b, c) a = 1 is default"
 # Container unpacking: Length of container must match the function parameter.
 # Python’s argument passing model is neither “Pass by Value” nor “Pass by Reference” but it is “Pass by Object Reference”.
 

@@ -3,7 +3,7 @@
 # update(): The update() method accepts lists, strings, tuples as well as other sets as its arguments.
 # remove() vs discard(): Remove elements from the set. remove() - if elements doesn't exist in the set a KeyError arises. discard() -> if the element doesn’t exist in the set, it remains unchanged.
 # intersection(): Returns a new set with an element that is common to all set.
-# symmetric_difference(): is an opposite to the set.intersection() methods.
+# symmetric_difference(): is an opposite to the set.intersection() methods. Returns a new set with an element that is not common to all set.
 # isdisjoint(): Returns True if two sets have a null intersection.
 # frozenset() vs Set(): Set() can be modified at any time. frozenset() cannot be modified. But union(), intersection(), difference() will work.
 # empty set
@@ -38,7 +38,7 @@ print(empty_set_two) #{1, 2, 3, 4, (5, 6)}
 print("*** Update Set ***")
 create_set_three = set([1000, 2000, (3000, 4000)])
 create_set_three.update([5000, 6000, 7000])
-print(create_set_three)
+print(create_set_three) #{1000, 5000, (3000, 4000), 6000, 2000, 7000}
 
 # Accessing set
 print("*** Accessing element using for loop ***")

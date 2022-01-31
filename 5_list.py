@@ -1,7 +1,7 @@
 # List: ordered, mutable, allows duplicate elements.
 # append(value): append method only works for the addition of elements at the end of the list.
 # insert(position, value): insert elements at the desired position.
-# extend(elements): add elements at the end.
+# extend(elements): add multiple elements at the end.
 # negative indexing: -1 -> Last element of the list. -2 -> Second last element of the list.
 # remove(): only remove one elements at a time.
 # pop(): By default it removes only the last element of the set. To remove an element from a specific position of the list, the index of the element is passed as an argument to the pop() method.

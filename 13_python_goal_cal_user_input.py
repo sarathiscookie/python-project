@@ -1,6 +1,6 @@
 from datetime import datetime
 
-user_input = input("Enter your goal with a deadline.... (Format: Python:31.01.2022) \n")
+user_input = input("Enter your goal with a deadline.... (Format: dd.mm.Y) \n")
 
 split_input = user_input.split(":")
 goal = split_input[0]
