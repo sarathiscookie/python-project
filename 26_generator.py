@@ -3,9 +3,6 @@
 # If the body of a def contains yield, the function automatically becomes a generator function.
 
 # Generator: Method 1
-from re import I
-
-
 print("*** Generator: Method 1 ***")
 def generator_method_one_fun():
     yield 1

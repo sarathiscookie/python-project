@@ -15,14 +15,14 @@ outerNestedFunction("Hello nested function") #Hello nested function
 
 # Closure function: Example 1.
 print("*** Closure function: Example 1. ***")
-def outerCloserFunction(text):
+def outerClosureFunction(text):
 
-    def innerClosireFunction():
+    def innerClosureFunction():
         print(text)
 
-    return innerClosireFunction
+    return innerClosureFunction
 
-func = outerCloserFunction("Hello closure function")
+func = outerClosureFunction("Hello closure function")
 func() #Hello closure function
 
 # Closure function: Example 2.
