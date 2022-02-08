@@ -1,42 +1,27 @@
-# append(value): append method only works for the addition of elements at the end of the list.
-# insert(position, value): insert elements at the desired position.
-# extend(elements): add elements at the end.
-# negative indexing: -1 -> Last element of the list. -2 -> Second last element of the list.
-# remove(): only remove one elements at a time.
-# pop(): By default it removes only the last element of the set. To remove an element from a specific position of the list, the index of the element is passed as an argument to the pop() method.
+class Salary:
+    min_salary_per_day = 15
 
-blank_list = []
+    def __init__(self, name: str, age: int, working_days: int, salary_per_day: float):
+        assert 10 < working_days, f"You have to arrange a meeting with your manager. Your attendance is very low {working_days}."
 
-week_days_user_input = ""
+        self.name = name
+        self.age = age
+        self.working_days = working_days
+        self.salary_per_day = salary_per_day
 
-def prompt_message(category):
-    if category == "enter_weekday_prompt":
-        return input("Enter the week days.\n")
-    elif category == "ask_week_day_prompt":
-        return input("Do you want to add week days?\n")
-    elif category == "select_method_prompt":
-        return input("Please select a method (1:normal, 2:tuple, 3:set)?\n")            
+    def calculate_total_salary(self):
+        return self.working_days * self.salary_per_day
 
-def input_method(user_input_method, blank_list):
-    if user_input_method == "1":
-        user_input_list = prompt_message("enter_weekday_prompt")
-        for extracted_data in user_input_list.split(", "):
-            blank_list.append(extracted_data)
+    def calculate_minimum_salary(self):
+        return self.min_salary_per_day * self.working_days
 
-    if user_input_method == "2":
-        user_input_list = prompt_message("enter_weekday_prompt")
-        blank_list.append(tuple(user_input_list.split(", ")))
+salary = Salary("Peter", 35, 11, 25)
+print(Salary.__dict__)
+print(salary.__dict__)
 
-    if user_input_method == "3":
-        user_input_list = prompt_message("enter_weekday_prompt")
-        blank_list.append(user_input_list.split(", "))            
 
-    return blank_list    
 
-while week_days_user_input != "n":
-    week_days_user_input = prompt_message("ask_week_day_prompt")
-    if week_days_user_input == 'y':
-        user_input_method = prompt_message("select_method_prompt")
-        return_input_method = input_method(user_input_method, blank_list)   
 
-print(return_input_method)
+
+
+
