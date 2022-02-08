@@ -1,4 +1,5 @@
 # Multiprocessing: Multiprocessing refers to the ability of a system to support more than one processor at the same time.
+# Process: Process is an instance of a computer program that is being executed.
 # Note: Multiprocessor library is for dividing work between multiple processes.
 # Multiprocessor: i.e. a computer with more than one central processor.
 

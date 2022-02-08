@@ -1,5 +1,4 @@
 # Multithreading: Multithreading is a way of achieving multitasking. In multithreading the concept of threads is used.
-# Process: Process is an instance of a computer program that is being executed.
 # Thread: Thread is an entity within a process that can be scheduled for execution. (It is a subset of process).
 # Thread Synchronization: Thread synchronization is defined as a mechanism which ensure that two or more concurrent threads do not simultaneously execute some particular program segment known as critical section.
 # join(): The current program will first wait for the completion of t1 and then t2. Once, they are finished, the remaining statements of current program are executed.
