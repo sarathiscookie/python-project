@@ -10,4 +10,4 @@ for product_instance in Product.all:
     print(product_instance.product)
 
 print("*** staticmethod ***")
-print(Product.is_integer(5.0))    
+print(Product.is_integer(5.0)) 
