@@ -2,6 +2,7 @@
 
 # In this program, we have a parent (base) class and two child (derived) classes.
 
+# Base class
 class Parent:
 
     def __init__(self):
@@ -11,6 +12,7 @@ class Parent:
     def parent_func(self):
         print(f"Parent Name: {self.name}, Parent Age: {self.age}")
 
+# Derived class1
 class Child1(Parent):
 
     def __init__(self):
@@ -21,6 +23,7 @@ class Child1(Parent):
     def child_one_func(self):
         print(f"Child Name: {self.c1name}")
 
+# Derivied class2
 class Child2(Parent):
 
     def __init__(self):

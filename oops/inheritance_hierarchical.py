@@ -2,16 +2,19 @@
 
 # In this program, we have a parent (base) class and two child (derived) classes.
 
+# Base class
 class Parent:
 
     def parent_func(self):
         print("This function is from parant class.")
 
+# Derived class1
 class Child1(Parent):
 
     def child_one_func(self):
         print("This function is from child one.")
 
+# Derivied class2
 class Child2(Parent):
 
     def child_two_func(self):
