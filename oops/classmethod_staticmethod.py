@@ -54,6 +54,25 @@ class Product:
     # To convert into readable form.
     # [<five.Product object at 0x10e41fbb0>, <five.Product object at 0x10e41fc10>, <five.Product object at 0x10e45cc70>, <five.Product object at 0x10e45cd60>, <five.Product object at 0x10e45f850>]
     def __repr__(self):
-        return f"Product({self.product}, {self.price}, {self.quantity})"           
+        return f"Product({self.product}, {self.price}, {self.quantity})"    
+
+
+print("*** classmethod ***")
+Product.instantiate_from_csv()
+print(Product.all) #[Product(Phone, 100.0, 1.0), Product(Laptop, 1000.0, 3.0), Product(Cable, 10.0, 5.0), Product(Mouse, 50.0, 5.0), Product(Keyboard, 75.0, 5.0)]
+
+for product_instance in Product.all:
+    print(product_instance.product)
+    """
+    Phone
+    Laptop
+    Cable
+    Mouse
+    Keyboard    
+    """
+
+print("*** staticmethod ***")
+print(Product.is_integer(5.0)) #True
+
 
 
