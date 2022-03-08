@@ -1,0 +1,25 @@
+# Method overriding with multiple inheritance
+
+# Defining parent class 1
+class Parent1:
+
+    # Parent's show method
+    def show(self):
+        return "Inside parent one"
+
+# Defining Parent class 2
+class Parent2:
+
+    # Parent's show method
+    def show(self):
+        return "Inside parent two"
+
+# Defining child class
+class Child(Parent1, Parent2):
+
+    # Child's show method
+    def show(self):
+        return "Inside child"
+
+child = Child()
+print(child.show())  
