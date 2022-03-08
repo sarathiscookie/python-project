@@ -6,8 +6,6 @@
 # Identity: It gives a unique name to an object and enables one object to interact with other objects.
 # Eg: Identity [Name of Dog], State[Breed, Color, Age], Behavior[Bark, Sleep, Eat].
 # Self: The self parameter is a reference to the current instance of the class, and is used to access variables that belongs to the class. It does not have to be named self , you can call it whatever you like, but it has to be the first parameter of any function in the class.
-# If we have a method that takes no arguments, then we still have to have one argument.
-# Declaring Objects (Also called instantiating a class)
 class Vehicle:
 
     # Attribute (State)

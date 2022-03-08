@@ -1,6 +1,3 @@
-from copyreg import constructor
-
-
 # constructor: The __init__ methods is similar to constructors in Java. Constructors are used to initializing the objects state. Like methods, a constructor also contains a collection of statements(ie instructions) that are executed at the time of object creation. It runs as soon as an object of a class is instantiated.
 # the __init__() method is called the constructor and is always called when an object is created.
 # Instance variables: Instance variables are variables whose value is assigned inside a constructor or method with self.

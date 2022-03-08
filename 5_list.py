@@ -14,6 +14,7 @@
 # [:] -> to print the whole List with the use of slicing operation.
 # clear(): Removes all items from the list.
 # sorted() vs sort(): sorted() methods doesnot effect the original sequence but sort() methods effect the original sequence.
+# reverse: Reverse the array.
 # List Comprehension: Creating new list from other iterables. Format -> [expression(element) for element in oldList if condition]
 
 # Blank List

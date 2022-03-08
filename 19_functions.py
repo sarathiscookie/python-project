@@ -7,6 +7,7 @@
 # Default arguments "func(a = 1, b, c) a = 1 is default"
 # Container unpacking: Length of container must match the function parameter.
 # Python’s argument passing model is neither “Pass by Value” nor “Pass by Reference” but it is “Pass by Object Reference”.
+# In Python every variable name is a reference. When we pass a variable to a function, a new reference to the object is created. Parameter passing in Python is the same as reference passing in Java.
 
 # Arguments and Parameter.
 print("*** Parameter and arguments. ***")

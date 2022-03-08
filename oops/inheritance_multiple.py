@@ -1,5 +1,4 @@
-# Multiple inheritance: When a child class inherits from multiple parent classes, it is called multiple inheritance. 
-# Unlike Java and like C++, Python supports multiple inheritance. We specify all parent classes as a comma-separated list in the bracket. 
+# Multiple inheritance: When a child class inherits from multiple parent classes, it is called multiple inheritance.
 
 # Base class1
 class Base1:

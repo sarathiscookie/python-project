@@ -1,6 +1,6 @@
 from datetime import datetime
 
-goal_date = "31.01.2022"
+goal_date = "30.03.2022"
 
 current_date = datetime.today()
 

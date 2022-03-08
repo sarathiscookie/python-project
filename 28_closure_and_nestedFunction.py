@@ -1,5 +1,5 @@
 # Nested Function: A function that is defined inside another function is known as nested function.
-# Closure FUnction: A closure is a function object that remembers value in enclosing scopes even if they are not present in memory.
+# Closure Function: A closure is a function object that remembers value in enclosing scopes even if they are not present in memory.
 # Features of the Closures are:Closures provide a kind of data hiding in our program and so we can avoid using global variables.
 
 # Nested function
