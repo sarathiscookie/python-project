@@ -42,7 +42,7 @@ print("Accessing protedted member of obj2: ", obj2._age)
 """
 Calling protected member of base class:  25
 Calling modified protected member outside class:  36
-Accessing protedted member of obj1:  25
-Accessing protedted member of obj2:  36
+Accessing protected member of obj1:  25
+Accessing protected member of obj2:  36
 """
 
