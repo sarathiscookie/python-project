@@ -12,7 +12,7 @@ all_news = BeautifulSoup(url_request.text, "html.parser")
 news_headlines = [news.getText() for news in all_news.find_all("a", class_="titlelink", limit=10)]
 # print(news_headlines)
 
-with open("/projects/4_top_10_news/news.txt", mode="w") as file:
+with open("news.txt", mode="w") as file:
     for news_headline in news_headlines:
         file.write(f"{news_headline} \n")
 
