@@ -37,3 +37,13 @@ def main_func(x):
 
 sum_function = main_func(10)    
 print(sum_function(15)) #25
+
+# Another example
+def multiply(n1, n2):
+    return n1 * n2
+
+def calculate(calc_func, n1, n2):
+    return calc_func(n1, n2)
+
+result = calculate(multiply, 5, 6)
+print(result)         

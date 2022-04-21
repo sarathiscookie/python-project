@@ -17,4 +17,3 @@ with open("news.txt", mode="w") as file:
         file.write(f"{news_headline} \n")
 
 print("Done! News headlines write in to a file.")
-
