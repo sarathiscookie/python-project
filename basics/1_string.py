@@ -1,5 +1,5 @@
 # Notes
-# f - stands for format.
+# f - stands for format. Literal String Interpolation or more commonly as F-strings.
 # type - check type of a variable. 
 # Slicing: colon(:). 
 # [:Index] -> To print elements from beginning to a range use. 
@@ -34,7 +34,7 @@ print(f"Repeat list[] ten times: {[1] * 10}") #[1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
 
 print(f"Repeat list[] ten times: {[1, 2] * 10}") #[1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2]
 
-print(f"Reapeat tuples() ten times: {(3, 4) * 10}") #(3, 4, 3, 4, 3, 4, 3, 4, 3, 4, 3, 4, 3, 4, 3, 4, 3, 4, 3, 4)
+print(f"Repeat tuples() ten times: {(3, 4) * 10}") #(3, 4, 3, 4, 3, 4, 3, 4, 3, 4, 3, 4, 3, 4, 3, 4, 3, 4, 3, 4)
 
 print(f"Repeat string ten times: {'ABC' * 10}") #ABCABCABCABCABCABCABCABCABCABC
 

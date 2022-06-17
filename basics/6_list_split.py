@@ -25,7 +25,7 @@ def process(days):
         print("Something went wrong")
 
 while continue_process != "n":
-    user_input_days = input("Enter no of days comma seperated. I will convert in to hours. \n")
+    user_input_days = input("Enter no of days comma separated with space eg 1, 2, 3. I will convert in to hours. \n")
      
     for input_day in user_input_days.split(", "):
         output = process(input_day)  
