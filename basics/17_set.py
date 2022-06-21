@@ -72,9 +72,9 @@ print(create_set_five)
 # Clear the set
 print("*** Clear the set ***")
 create_set_six = set(["peter", "john", "jane"])
-print(create_set_six)
+print(create_set_six) #{'peter', 'john', 'jane'}
 create_set_six.clear()
-print(create_set_six)
+print(create_set_six) #set()
 
 # Set Union 
 print("*** set union function ***")
@@ -122,8 +122,8 @@ issubset_a = {4, 1, 3, 5}
 issubset_b = {6, 0, 4, 1, 5, 0, 3, 5}
 is_subset_check_one = issubset_a.issubset(issubset_b)
 is_subset_check_two = issubset_b.issubset(issubset_a)
-print(is_subset_check_one)
-print(is_subset_check_two)
+print(is_subset_check_one) #True
+print(is_subset_check_two) #False
 
 # issuperset
 print(" *** issuperset() *** ")
@@ -131,8 +131,8 @@ is_superset_a = {4, 1, 3, 5}
 is_superset_b = {6, 0, 4, 1, 5, 0, 3, 5}
 is_superset_check_one = is_superset_a.issuperset(is_superset_b)
 is_superset_check_two = is_superset_b.issuperset(is_superset_a)
-print(is_superset_check_one)
-print(is_superset_check_two)
+print(is_superset_check_one) #False
+print(is_superset_check_two) #True
 
 # Merge tuple and set in to a list.
 print("*** Merge tuple and set in to a list. ***")

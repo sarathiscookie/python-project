@@ -9,6 +9,7 @@
 # [:] -> to print the whole List with the use of slicing operation.
 # Tuples are immutable, and usually, they contain a sequence of heterogeneous elements that are accessed via unpacking or indexing (or even by attribute in the case of named tuples). Lists are mutable, and their elements are usually homogeneous and are accessed by iterating over the list.
 # Tuples are immutable and hence they do not allow deletion of a part of it. The entire tuple gets deleted by the use of del() method.
+# enumerate(): It takes an iterable collection as an argument and returns an enumerate object.
 
 # Creating an empty tuple.
 print("*** Empty tuple ***")
@@ -68,6 +69,45 @@ a, b, c = accessing_tuple_one
 print(a)
 print(b)
 print(c)
+
+# Destructuring in Python
+print("*** Destructuring in Python. ***")
+print("Example 1: ")
+user_list = [
+    ("Peter", 24, "Newyork"),
+    ("Smith", 34, "Berlin"),
+    ("Daniel", 44, "Seattle"),
+]
+
+for name, age, address in user_list:
+    print(f"Name: {name}, Age: {age}, Address: {address}")
+
+"""
+Name: Peter, Age: 24, Address: Newyork
+Name: Smith, Age: 34, Address: Berlin
+Name: Daniel, Age: 44, Address: Seattle
+"""
+
+print("Example 2:")
+a, *b, c = count_of_element
+print(a)
+print(b)
+print(c)
+"""
+W
+['e', 'l', 'c', 'o', 'm']
+e
+"""
+
+print("Example 3:")
+list_data = ["A", "B", "C"]
+for (index, value) in enumerate(list_data):
+    print(index, value)
+"""
+0 A
+1 B
+2 C
+"""    
 
 # Concatenation of tuples
 print("*** Concatenation of tuples ***")

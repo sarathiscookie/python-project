@@ -60,7 +60,7 @@ for article in sliced_articles:
                 .create(
                      body=content,
                      from_='+17348227044',
-                     to='+919562903203'
+                     to=config('TWILIO_RECEIVER_MOBILE')
                  )
 
 print ("SMS Sent")                 
