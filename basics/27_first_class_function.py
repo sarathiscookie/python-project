@@ -17,10 +17,10 @@ print(var_func("Hello World!")) #HELLO WORLD!
 print("*** Passing the function as an argument. ***")
 
 def upper_case_func(text):
-    return text.upper();
+    return text.upper()
 
 def lower_case_func(text):
-    return text.lower();    
+    return text.lower()   
 
 def convert_text(func):
     return func("Hello, Welcome onboard!")
