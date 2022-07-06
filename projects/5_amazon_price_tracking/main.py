@@ -1,14 +1,17 @@
+from http.client import USE_PROXY
+import smtplib, ssl
 import requests
-
 import lxml
-
 from bs4 import BeautifulSoup
+from decouple import config
+from smtplib import SMTP
+from socket import gaierror
 
-url = "https://www.amazon.com/dp/B004Y6AJP2/ref=syn_sd_onsite_desktop_60?psc=1&pd_rd_plhdr=t&spLa=ZW5jcnlwdGVkUXVhbGlmaWVyPUEyRlhWS0pINFE3TTFHJmVuY3J5cHRlZElkPUEwNDY5Mjk3RVpBNldQOVBIQ1JDJmVuY3J5cHRlZEFkSWQ9QTA2MTA1NTcyUDlVTEs3VU5CSlM3JndpZGdldE5hbWU9c2Rfb25zaXRlX2Rlc2t0b3AmYWN0aW9uPWNsaWNrUmVkaXJlY3QmZG9Ob3RMb2dDbGljaz10cnVl"
+url = config('URL')
 
 headers = {
-    "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36",
-    "Accept-Language": "en-GB,en-US;q=0.9,en;q=0.8"
+    "User-Agent": config('USER_AGENT'),
+    "Accept-Language": config('ACCEPT_LANGUAGE')
 }
 
 
@@ -19,8 +22,32 @@ soup = BeautifulSoup(response.text, "lxml")
 #print(soup.prettify())
 
 result = soup.find(class_ ="a-offscreen").get_text()
+#print(result) #$36.38
 
-print(result)
+price_without_currency = result.split("$")[1]
+price_as_float = float(price_without_currency)
 
-#TODO: Split value
-#TODO: SMTP to send email (Refer -> https://wipro.udemy.com/course/100-days-of-code/learn/lecture/21710354#overview)
+if price_as_float < float(config('TARGET_PRICE')):
+
+    message = f"""\
+        Subject: Python Bot Price Tracking...
+        To: {config('RECEIVER')}
+        From: {config('SENDER')}
+
+        Amount is less than target price. Todays price is {price_as_float}."""
+
+    try:
+        with smtplib.SMTP(config('HOST'), config('PORT')) as server:
+            server.login(config('USERNAME'), config('PASSWORD'))
+            server.sendmail(config('SENDER'), config('RECEIVER'), message)
+
+        print("Email Sent!")    
+    except (gaierror, ConnectionRefusedError):
+        print('Failed to connect to the server. Bad connection settings?')    
+    except smtplib.SMTPServerDisconnected:
+        print("Failed to connect to the server. Wrong user/password?")        
+    except smtplib.SMTPException as e:
+        print("SMTP error occured: " + str(e))       
+       
+    
+
