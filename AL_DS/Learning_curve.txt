@@ -1,0 +1,31 @@
+## Data Structures
+# Time & Space complexity
+
+# Linear Data Structures
+    - Arrays 
+    - Strings   
+    - Linked List 
+    - Stacks    
+    - Queues   
+
+# Non-Linear Data Structures
+    - Trees 
+    - Graph 
+    - Heaps 
+
+# Recursion and Backtracking
+
+## Algorithms 
+# Sorting Algorithms
+    - Bubble Sort   
+    - Selection Sort 
+    - Insertion Sort 
+    - Shell Sort 
+    - Merge Sort 
+    - Quick Sort 
+
+# Search Algorithms
+    - Linear Search
+    - Binary Search 
+        
+
