@@ -1,6 +1,6 @@
 # Nested Function: A function that is defined inside another function is known as nested function.
 # Closure Function: A closure is a function object that remembers value in enclosing scopes even if they are not present in memory.
-# Features of the Closures are:Closures provide a kind of data hiding in our program and so we can avoid using global variables.
+# So what are closures good for? Closures can avoid the use of global values and provides some form of data hiding.
 
 # Nested function
 print("*** Nested function ***")
