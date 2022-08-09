@@ -34,10 +34,10 @@ obj2 = Derived()
  
 # Calling protected member
 # Can be accessed but should not be done due to convention
-print("Accessing protedted member of obj1: ", obj1._age)
+print("Accessing protected member of obj1: ", obj1._age)
  
 # Accessing the protected variable outside
-print("Accessing protedted member of obj2: ", obj2._age) 
+print("Accessing protected member of obj2: ", obj2._age) 
 
 """
 Calling protected member of base class:  25

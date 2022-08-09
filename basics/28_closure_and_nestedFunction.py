@@ -1,29 +1,44 @@
 # Nested Function: A function that is defined inside another function is known as nested function.
-# Closure Function: A closure is a function object that remembers value in enclosing scopes even if they are not present in memory.
-# So what are closures good for? Closures can avoid the use of global values and provides some form of data hiding.
+# Closures: Closures can access variables present in the outer function. It can access these variables even after the outer function has completed its execution.
+# Nested: The inner function becomes a nested when we access the inner function instead of return it. (CALLING)
+# VS 
+# Closures: The inner function becomes a closure when we return the inner function instead of calling it. (RETURN)
+# Why do you need to use closures in Python:-
+# To replace the unnecessary use of class: Suppose you have a class that contains just one method besides the __init__ method. In such cases, it is often more elegant to use a closure instead of a class.
+# To avoid the use of the global scope: If you have global variables which only one function in your program will use, think closure. Define the variables in the outer function and use them in the inner function.
+# To implement data hiding: The only way to access the enclosed function is by calling the enclosing function. There is no way to access the inner function directly.
 
 # Nested function
 print("*** Nested function ***")
 def outerNestedFunction(text):
-    
+    # this is the enclosing function.
+
     def innerNestedFunction():
+        # this is the enclosed function.
+
+        # the inner function accessing the outer function's variable 'text.
         print(text)
 
     innerNestedFunction()
 
-outerNestedFunction("Hello nested function") #Hello nested function
+# call the enclosing function.
+outerNestedFunction("Hello nested function") # Hello nested function
 
 # Closure function: Example 1.
 print("*** Closure function: Example 1. ***")
 def outerClosureFunction(text):
+    # this is the enclosing function
 
     def innerClosureFunction():
+        # this is the enclosed function
+        # the inner function accessing the outer function's variable 'text'
         print(text)
 
     return innerClosureFunction
 
+# call the enclosing function
 func = outerClosureFunction("Hello closure function")
-func() #Hello closure function
+func() # Hello closure function
 
 # Closure function: Example 2.
 print("*** Closure function: Example 2. ***")

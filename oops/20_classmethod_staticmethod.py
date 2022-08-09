@@ -3,7 +3,7 @@
 # class attributes
 # classmethod: A class method receives the class as an impact first argument. def func(cls, arg1, arg2).
 # A class method is a method that is bound to the class and not the object of the class.
-# it can modify a class state that would apply across all the ionstances of the class. For example, it can modify a class variable that will be applicable to all the instances.
+# it can modify a class state that would apply across all the instances of the class. For example, it can modify a class variable that will be applicable to all the instances.
 # staticmethod: A static method does not receive an implicit first argument.
 # A static method is also a method that is bound to the class and not the object of the class.
 # A static method can't access or modify the class state.  
@@ -21,7 +21,7 @@ class Product:
         assert price >= 0, f"Price {price} should be greater than or equal to zero."
         assert quantity >= 0, f"Quantity {quantity} should be greater that or equal to zero."
 
-        # Asssign to self objects.
+        # Assign to self objects.
         self.product = product
         self.price = price
         self.quantity = quantity

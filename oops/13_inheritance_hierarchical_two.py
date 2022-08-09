@@ -23,7 +23,7 @@ class Child1(Parent):
     def child_one_func(self):
         print(f"Child Name: {self.c1name}")
 
-# Derivied class2
+# Derived class2
 class Child2(Parent):
 
     def __init__(self):
@@ -44,4 +44,47 @@ child_two.child_two_func()
 Parent Name: Peter, Parent Age: 36
 Child Name: Jane
 Child Name: Joe
+"""
+
+
+"""
+Example -2 
+"""
+"""
+class Parent:
+    def __init__(self):
+        self.p_name = "Peter"
+        self.p_address = "kochi"
+
+    def get_parent_details(self):
+        return f"Parent name: {self.p_name}, Parent address: {self.p_address}"
+
+    def get_address(self):
+        return self.p_address    
+
+class FirstChild(Parent):
+    def __init__(self):
+        self.f_name = "Jane"
+        self.f_age = 5
+
+        Parent.__init__(self)
+
+    def get_first_child_details(self):
+        return f"First child name: {self.f_name}, Age: {self.f_age}"
+
+class SecondChild(Parent):
+    def __init__(self):
+        self.s_name = "Smith"
+        self.s_age = 2
+
+        Parent.__init__(self)
+
+    def get_second_child_details(self):
+        return f"Second child name: {self.s_name}, Age: {self.s_age}"
+
+
+second_child = SecondChild()
+print(second_child.get_parent_details())
+print(second_child.get_second_child_details())
+print(second_child.get_address())
 """
