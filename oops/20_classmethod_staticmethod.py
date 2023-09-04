@@ -1,9 +1,8 @@
 # __something__: It is called magic methods.
 # assert: We can use assert to validate the arguments received.
-# class attributes
 # classmethod: A class method receives the class as an impact first argument. def func(cls, arg1, arg2).
+# It can modify a class state that would apply across all the instances of the class. For example, it can modify a class variable that will be applicable to all the instances.
 # A class method is a method that is bound to the class and not the object of the class.
-# it can modify a class state that would apply across all the instances of the class. For example, it can modify a class variable that will be applicable to all the instances.
 # staticmethod: A static method does not receive an implicit first argument.
 # A static method is also a method that is bound to the class and not the object of the class.
 # A static method can't access or modify the class state.  

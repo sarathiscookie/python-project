@@ -24,6 +24,9 @@ print(2021)
 
 print(20 * 24 * 60)
 
+to_checK_type = "Hello I am string!"
+print(type(to_checK_type))
+
 print("Two days are "+ str(48) +" hours")
 
 print(f"Three days are {72} hours")
