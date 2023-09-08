@@ -4,7 +4,7 @@
 # ModuleNotFoundError: No module found.
 # NameError: Name is not found.
 # FileNotFoundError: File not found.
-# ValueError: Vale not found.
+# ValueError: Value not found.
 # IndexError: Index not found.
 # KeyError: key not found.
 

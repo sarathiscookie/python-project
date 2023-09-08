@@ -1,4 +1,4 @@
-#Generator-Function : A generator-function is defined like a normal function, but whenever it needs to generate a value, it does so with the yield keyword rather than return
+# Generator-Function : A generator-function is defined like a normal function, but whenever it needs to generate a value, it does so with the yield keyword rather than return
 # yield: The yield statement suspends function’s execution and sends a value back to the caller.
 # If the body of a def contains yield, the function automatically becomes a generator function.
 # Real time example: 

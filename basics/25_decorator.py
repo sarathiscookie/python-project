@@ -19,7 +19,7 @@ print(result_func_example_one())
  
 """
 Result:
-Funcion execution begins!
+Function execution begins!
 Executed this function
 Function execution ends!
 """
