@@ -15,6 +15,10 @@ print("*** Lambda function example three ***")
 greetings = "Hello User!"
 (lambda x: print(x)) (greetings)
 
+print("*** Lambda function example four ***")
+lambda_fun = lambda x, y: x if(x > y) else y
+print(lambda_fun(10, 5))
+
 # Filter
 print("*** Filter ***")
 data = [100, 2, 8, 60, 5, 4, 3, 31, 10, 11]
