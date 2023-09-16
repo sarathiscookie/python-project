@@ -2,6 +2,7 @@ import os
 
 #TODO: Check user devgroup. If group not available create it. (write it in log file).
 group_name = "devops"
+
 user_name = "aws"
 
 def generate_line_that_equal(group_name, group_list):
@@ -12,6 +13,7 @@ def generate_line_that_equal(group_name, group_list):
 with open("/etc/group") as group_list:
     for line in generate_line_that_equal(group_name, group_list):
         print(line)
+
 
 
 #TODO: Check user devadmin. If user not available create it. (write it in log file).
