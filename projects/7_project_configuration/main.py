@@ -2,17 +2,22 @@ import os
 
 #TODO: Check user devgroup. If group not available create it. (write it in log file).
 group_name = "devops"
-
 user_name = "aws"
 
 def generate_line_that_equal(group_name, group_list):
     for line in group_list:
         if line.strip().startswith(group_name) == True:
-            yield line  
-
+            yield line
+        #TODO: Think about group name doesnt     
+              
 with open("/etc/group") as group_list:
     for line in generate_line_that_equal(group_name, group_list):
-        print(line)
+        split_data = line.split(":")
+
+        if user_name in split_data[3]:
+            print(f"User {user_name} is existing.")
+        else:
+            print(f"User {user_name} not found.")        
 
 
 
