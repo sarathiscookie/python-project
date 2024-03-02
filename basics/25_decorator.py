@@ -1,4 +1,4 @@
-# Decorators are used to modify the behavior of function or class.
+# A decorator is a design pattern in Python that allows a user to add new functionality to an existing object without modifying its structure.
 # In Decorators, functions are taken as the argument into another function and then called inside the wrapper function.
 
 # Another way of using decorator.

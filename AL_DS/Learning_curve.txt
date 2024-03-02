@@ -1,31 +1,105 @@
-## Data Structures
+### Data Structures ###
+
+## Prerequisites
+    Polynomial:
+        It should be integer, non negative, power shouldn't 1/2 or variable.
+        eg 10x power 7 + 9x power9 - 9x
+        https://www.youtube.com/watch?v=Vm7H0VTlIco
+
+    Matrix:
+
+    Probability:
+
+## Approach
+    Find a number:-
+        Number occurs middle, first or last.
+        Number does not contain.
+        Number is repeated.
+        Maybe one number.
+# Binary Search, Linked Lists and Complexity
+
+
+
+
+
+####################################################################################################
 # Time & Space complexity
 
 # Linear Data Structures
-    - Arrays 
-    - Strings   
-    - Linked List 
-    - Stacks    
-    - Queues   
+    - Arrays
+    - Linked List
+    - Stacks
+    - Queues
 
 # Non-Linear Data Structures
-    - Trees 
-    - Graph 
-    - Heaps 
+    - Trees
+    - Graph
+    - Heaps
 
 # Recursion and Backtracking
 
-## Algorithms 
+## Algorithms
 # Sorting Algorithms
-    - Bubble Sort   
-    - Selection Sort 
-    - Insertion Sort 
-    - Shell Sort 
-    - Merge Sort 
-    - Quick Sort 
+    - Bubble Sort
+    - Selection Sort
+    - Insertion Sort
+    - Heap Sort
+    - Counting Sort
+    - Shell Sort
+    - Merge Sort
+    - Quick Sort
 
 # Search Algorithms
+    - Binary Search
+    - Recursion
+    - Bubble Sort
+    - Merge Sort
+    - Quick Sort
     - Linear Search
-    - Binary Search 
-        
+
+# Maps and Hashing
+    - Maps
+    - Hashing
+    - Collisions
+    - Hashing Conventions
+
+* Recursion Alg, Backtracking Alg, Divide & Conquer, Dynamic Programming, Randomized Alg
+
+# Trees
+    - Trees
+    - Tree Traversal
+    - Binary Search
+    - Binary Search Trees
+    - Heaps
+    - Self-Balancing Trees
+
+# Graphs
+    - Graphs
+    - Graph Properties
+    - Graph Representation
+    - Graph Traversal
+    - Graph Paths
+
+    - Depth First Search
+    - Breadth First Search
+    - Kruskal's Algo
+    - Dijkstra's Algo
+    - Bellman Ford Algo
+    - Floyd Warshall Algo
+    - Topological Sort Algo
+    - Flood Fill Algo
+    - Lee Algo
+
+# Arrays
+    - Kandane's Algo
+    - Floyd's Cycle Detection Algo
+    - KMP Algo
+    - Quick Select Algo
+    - Boyer - More Majority Vote Algo
+
+# Basics
+    - Huffman Coding Compression Algo
+    - Euclid's Algo
+    - Union Find Algo
+
 
